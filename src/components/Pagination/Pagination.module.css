@@ -1,0 +1,42 @@
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 228px);
+  justify-content: center;
+  width: 100%;
+  height: 100wh;
+}
+footer .pageListUl {
+  display: flex;
+  justify-content: space-around;
+}
+footer .pageListUl .btn {
+  display: flex;
+  align-items: center;
+  height: 21px;
+  transform: rotate(180deg);
+}
+footer .pageListUl .btn .arrow * {
+  fill: var(--ver-imgColor);
+}
+footer .pageListUl .btn2 .arrow2 * {
+  fill: var(--ver-imgColor);
+}
+footer .pageListUl a:hover {
+  background: var(--var-hover);
+}
+footer .pageListUl button {
+  background: none;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
+    margin-top: 1000px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    margin-top: 400px;
+  }
+}/*# sourceMappingURL=Pagination.module.css.map */

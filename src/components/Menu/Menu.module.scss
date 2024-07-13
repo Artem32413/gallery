@@ -1,0 +1,243 @@
+.menu {
+    color: var(--var-fc);
+    display: none;
+
+    .positionMenu {
+        width: 74.9vh;
+        height: 99%;
+        background-color: var(--var-border);
+        position: absolute;
+        top: 10px;
+        left: 62.3%;
+
+        .marginBlock {
+            height: 700px;
+            margin: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .menuContent {
+                width: 400px;
+                height: 128px;
+
+                .closeBig * {
+                    fill: var(--ver-imgColor);
+                }
+
+                .closeButton {
+                    position: absolute;
+                    right: 200px;
+                    top: 80px;
+                }
+
+                button {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .siUl1 {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(1, 1fr);
+                    font-family: "Cormorant SC", serif;
+
+                    li {
+                        font-size: 25px;
+                        margin: 10px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 230px);
+                        grid-template-rows: repeat(1, 30px);
+                        align-items: center;
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .minus * {
+                                transition: 3s;
+                                fill: var(--ver-imgColor);
+                            }
+
+                            .plus * {
+                                fill: var(--ver-imgColor);
+                            }
+                        }
+                    }
+                }
+
+                .siUl2 {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(1, 1fr);
+                    font-family: "Cormorant SC", serif;
+
+                    li {
+                        font-size: 25px;
+                        margin: 10px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 230px);
+                        grid-template-rows: repeat(1, 30px);
+                        align-items: center;
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .minus * {
+                                transition: 3s;
+                                fill: var(--ver-imgColor);
+                            }
+
+                            .plus * {
+                                fill: var(--ver-imgColor);
+                            }
+                        }
+                    }
+                }
+
+                .siUl3 {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(1, 1fr);
+                    font-family: "Cormorant SC", serif;
+
+                    li {
+                        font-size: 25px;
+                        margin: 10px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 230px);
+                        grid-template-rows: repeat(1, 30px);
+                        align-items: center;
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .minus * {
+                                transition: 3s;
+                                fill: var(--ver-imgColor);
+                            }
+
+                            .plus * {
+                                fill: var(--ver-imgColor);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footerFiltr {
+                width: 320px;
+                height: 15px;
+
+                .isUl {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.activeMenu {
+    display: block;
+    transition: 3s;
+}
+
+.activeSelect {
+    font-family: "Inter", sans-serif;
+    display: block;
+    color: #9c9c9c;
+    width: 290px;
+    height: 36px;
+    border-radius: 4px;
+    border: #dedede;
+    padding-left: 20px;
+}
+
+.noSelect {
+    display: none;
+}
+
+.divClass {
+    display: grid;
+    grid-template-columns: 67px 20px 67px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .activesearch3 {
+        padding-left: 15px;
+        border-radius: 4px;
+        height: 36px;
+        color: #9c9c9c;
+        border: #dedede;
+    }
+
+    .blockDiv {
+        width: 16px;
+        border-top: #575757 solid 2px;
+    }
+}
+
+.noSelect3 {
+    display: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu {
+        .positionMenu {
+            height: 140%;
+            top: 10px;
+            left: 49.3%;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu {
+
+        .positionMenu {
+            height: 140%;
+            top: 10px;
+            left: 34.3%;
+
+            .marginBlock {
+                margin: 15px;
+
+                .menuContent {
+                    li {
+                        font-size: 25px;
+                        margin: 10px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 202px);
+                        grid-template-rows: repeat(1, 30px);
+                        align-items: center;
+                        font-size: 12px;
+
+                        button {
+                            display: flex;
+                            align-items: center;
+
+                        }
+                    }
+
+                    .closeButton {
+                        position: absolute;
+                        right: 180px;
+                        top: 80px;
+
+                        .siUl1 {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

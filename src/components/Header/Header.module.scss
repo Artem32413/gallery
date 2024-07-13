@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  justify-content: center;
+  color: var(--var-fc);
+  background: var(--var-header-bg);
+  max-width: 100%;
+  padding: 40px 0;
+
+  .overHeader {
+    width: 1240px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .logoHeader * {
+      fill: var(--ver-imgColor);
+    }
+
+    .logoHeader:hover {
+      background: none;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      background: none;
+      fill: var(--ver-imgColor);
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    width: 100%;
+
+    .overHeader {
+      width: 256px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+
+    .overHeader {
+      width: 715px;
+    }
+  }
+}

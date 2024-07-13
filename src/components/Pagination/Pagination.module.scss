@@ -1,0 +1,54 @@
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 228px);
+  justify-content: center;
+  width: 100%;
+  height: 100wh;
+
+
+  .pageListUl {
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      height: 21px;
+      transform: rotate(180deg);
+
+      .arrow * {
+        fill: var(--ver-imgColor);
+      }
+
+
+    }
+
+    .btn2 {
+      .arrow2 * {
+        fill: var(--ver-imgColor);
+      }
+    }
+
+    a:hover {
+      background: var(--var-hover);
+    }
+
+    button {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
+    margin-top: 1000px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    margin-top: 400px;
+  }
+}

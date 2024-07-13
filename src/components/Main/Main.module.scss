@@ -1,0 +1,159 @@
+
+main {
+  display: flex;
+  width: 1240px;
+  height: 600px;
+  background-color: var(--var-body-bg);
+  color: var(--var-fc);
+
+  .widthPhoto {
+    height: 552px;
+    display: grid;
+    grid-template-columns: repeat(3, 430px);
+    grid-template-rows: repeat(3, 300px);
+
+    .photoInfo {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .overPhotoclass {
+        width: 392px;
+        height: 260px;
+      }
+
+      .overInfoPhoto {
+        display: flex;
+        align-items: center;
+        background: var(--var-body-bg);
+        color: var(--var-fc);
+        width: 300px;
+        height: 82px;
+        position: absolute;
+
+        button {
+          display: none;
+        }
+      }
+
+      .block {
+        display: inline-block;
+        height: 42px;
+        border-left: 2px solid var(--var-main-border);
+
+        .data {
+          color: var(--var-main-border);
+          font-size: 12px;
+        }
+
+        .nameText {
+          font-family: "Cormorant SC", serif;
+          font-size: 19px;
+          line-height: 19.38px;
+        }
+
+        p {
+          margin-left: 20px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    width: 100%;
+
+    .widthPhoto {
+      height: 1500px;
+      display: grid;
+      grid-template-columns: repeat(1, 300px);
+      grid-template-rows: repeat(6, 250px);
+
+      .photoInfo {
+        margin: -20px;
+        align-items: center;
+
+        .overPhotoclass {
+          width: 260px;
+          height: 185px;
+        }
+
+        .overInfoPhoto {
+          display: flex;
+          justify-content: space-between;
+          width: 236px;
+          height: 45px;
+
+          button {
+            display: block;
+            width: 24px;
+            height: 45px;
+            background-color: var(--var-main-border);
+            border: none;
+          }
+
+          .block {
+            display: inline-block;
+            height: 100%;
+            border-left: none;
+
+            p {
+              margin-left: 20px;
+              transition: 0.3s;
+              font-size: 12px;
+            }
+
+            .data {
+              color: var(--var-main-border);
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    width: 728px;
+
+    .widthPhoto {
+      height: 1104px;
+      display: grid;
+      grid-template-columns: repeat(2, 400px);
+      grid-template-rows: repeat(3, 300px);
+
+      .photoInfo {
+        margin: -20px;
+
+        .overPhotoclass {
+          width: 352px;
+          height: 220px;
+        }
+
+        .overInfoPhoto {
+          display: flex;
+          justify-content: space-between;
+
+          height: 66px;
+
+          button {
+            display: block;
+            width: 24px;
+            height: 66px;
+            background-color: var(--var-main-border);
+            border: none;
+          }
+
+          .block {
+            display: inline-block;
+            height: 100%;
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+}
